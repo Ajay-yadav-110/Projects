@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Binary Arithmetic Visualizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Binary Arithmetic Visualizer</h1>
+
+    
+    <!-- Tabs for Algorithm Selection -->
+    <div class="tabs">
+      <button class="tab-btn active" data-target="booth">Booth's Multiplication</button>
+      <button class="tab-btn" data-target="restoring">Restoring Division</button>
+      <button class="tab-btn" data-target="nonrestoring">Non-Restoring Division</button>
+    </div>
+
+    <!-- Booth's Multiplication Section -->
+    <div id="booth" class="tab-content active">
+      <h2>Booth's Multiplication Algorithm</h2>
+      <label>Enter Multiplicand (decimal):</label>
+      <input type="number" id="boothM" />
+      <label>Enter Multiplier (decimal):</label>
+      <input type="number" id="boothQ" />
+      <label>Enter Number of Bits:</label>
+      <input type="number" id="boothBits" />
+      <button onclick="runBooth()">Run Booth's Algorithm</button>
+      <pre id="boothOutput"></pre>
+    </div>
+
+    <!-- Restoring Division Section -->
+    <div id="restoring" class="tab-content">
+      <h2>Restoring Division Algorithm</h2>
+      <label>Enter Dividend (decimal):</label>
+      <input type="number" id="resDividend" />
+      <label>Enter Divisor (decimal):</label>
+      <input type="number" id="resDivisor" />
+      <label>Enter Number of Bits:</label>
+      <input type="number" id="resBits" />
+      <button onclick="runRestoring()">Run Restoring Division</button>
+      <pre id="resOutput"></pre>
+    </div>
+
+    <!-- Non-Restoring Division Section -->
+    <div id="nonrestoring" class="tab-content">
+      <h2>Non-Restoring Division Algorithm</h2>
+      <label>Enter Dividend (decimal):</label>
+      <input type="number" id="nresDividend" />
+      <label>Enter Divisor (decimal):</label>
+      <input type="number" id="nresDivisor" />
+      <label>Enter Number of Bits:</label>
+      <input type="number" id="nresBits" />
+      <button onclick="runNonRestoring()">Run Non-Restoring Division</button>
+      <pre id="nresOutput"></pre>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
