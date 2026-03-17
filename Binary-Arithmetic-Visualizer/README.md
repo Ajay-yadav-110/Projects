@@ -2,6 +2,10 @@
 
 This project is a web-based application that helps visualize binary arithmetic operations and algorithms in an interactive way.
 
+## Live Demo
+
+🔗 https://ajay-yadav-110.github.io/Projects/Binary-Arithmetic-Visualizer/
+
 ## Features
 
 * Binary arithmetic visualization
